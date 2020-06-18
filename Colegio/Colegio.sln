@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Colegio.Web", "Colegio.Web\Colegio.Web.csproj", "{3B20A6C3-CF41-4FDF-B7BA-33976719203F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Colegio.Datos", "Colegio.Datos\Colegio.Datos.csproj", "{48391A0B-688F-43B9-9045-500D965EB301}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B20A6C3-CF41-4FDF-B7BA-33976719203F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B20A6C3-CF41-4FDF-B7BA-33976719203F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B20A6C3-CF41-4FDF-B7BA-33976719203F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B20A6C3-CF41-4FDF-B7BA-33976719203F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48391A0B-688F-43B9-9045-500D965EB301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48391A0B-688F-43B9-9045-500D965EB301}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48391A0B-688F-43B9-9045-500D965EB301}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48391A0B-688F-43B9-9045-500D965EB301}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
