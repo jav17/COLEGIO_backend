@@ -146,5 +146,12 @@ D:\PROYECTOS\COLEGIO\backend\COLEGIO_backend\Colegio\Colegio.Web\bin\Debug\netco
 D:\PROYECTOS\COLEGIO\backend\COLEGIO_backend\Colegio\Colegio.Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\PROYECTOS\COLEGIO\backend\COLEGIO_backend\Colegio\Colegio.Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\PROYECTOS\COLEGIO\backend\COLEGIO_backend\Colegio\Colegio.Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\PROYECTOS\COLEGIO\backend\COLEGIO_backend\Colegio\Colegio.Web\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\PROYECTOS\COLEGIO\backend\COLEGIO_backend\Colegio\Colegio.Web\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\PROYECTOS\COLEGIO\backend\COLEGIO_backend\Colegio\Colegio.Web\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\PROYECTOS\COLEGIO\backend\COLEGIO_backend\Colegio\Colegio.Web\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+D:\PROYECTOS\COLEGIO\backend\COLEGIO_backend\Colegio\Colegio.Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\PROYECTOS\COLEGIO\backend\COLEGIO_backend\Colegio\Colegio.Web\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+D:\PROYECTOS\COLEGIO\backend\COLEGIO_backend\Colegio\Colegio.Web\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\PROYECTOS\COLEGIO\backend\COLEGIO_backend\Colegio\Colegio.Web\obj\Debug\netcoreapp3.1\Colegio.Web.csproj.CoreCompileInputs.cache
 D:\PROYECTOS\COLEGIO\backend\COLEGIO_backend\Colegio\Colegio.Web\obj\Debug\netcoreapp3.1\Colegio.Web.MvcApplicationPartsAssemblyInfo.cache

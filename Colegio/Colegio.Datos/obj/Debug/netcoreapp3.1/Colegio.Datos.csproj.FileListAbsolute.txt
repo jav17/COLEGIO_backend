@@ -1,6 +1,5 @@
 D:\PROYECTOS\COLEGIO\backend\COLEGIO_backend\Colegio\Colegio.Datos\bin\Debug\netcoreapp3.1\Colegio.Datos.deps.json
 D:\PROYECTOS\COLEGIO\backend\COLEGIO_backend\Colegio\Colegio.Datos\bin\Debug\netcoreapp3.1\Colegio.Datos.dll
-D:\PROYECTOS\COLEGIO\backend\COLEGIO_backend\Colegio\Colegio.Datos\obj\Debug\netcoreapp3.1\Colegio.Datos.csprojAssemblyReference.cache
 D:\PROYECTOS\COLEGIO\backend\COLEGIO_backend\Colegio\Colegio.Datos\obj\Debug\netcoreapp3.1\Colegio.Datos.AssemblyInfoInputs.cache
 D:\PROYECTOS\COLEGIO\backend\COLEGIO_backend\Colegio\Colegio.Datos\obj\Debug\netcoreapp3.1\Colegio.Datos.AssemblyInfo.cs
 D:\PROYECTOS\COLEGIO\backend\COLEGIO_backend\Colegio\Colegio.Datos\bin\Debug\netcoreapp3.1\Colegio.Datos.runtimeconfig.json
@@ -10,3 +9,4 @@ D:\PROYECTOS\COLEGIO\backend\COLEGIO_backend\Colegio\Colegio.Datos\obj\Debug\net
 D:\PROYECTOS\COLEGIO\backend\COLEGIO_backend\Colegio\Colegio.Datos\obj\Debug\netcoreapp3.1\Colegio.Datos.dll
 D:\PROYECTOS\COLEGIO\backend\COLEGIO_backend\Colegio\Colegio.Datos\obj\Debug\netcoreapp3.1\Colegio.Datos.pdb
 D:\PROYECTOS\COLEGIO\backend\COLEGIO_backend\Colegio\Colegio.Datos\obj\Debug\netcoreapp3.1\Colegio.Datos.genruntimeconfig.cache
+D:\PROYECTOS\COLEGIO\backend\COLEGIO_backend\Colegio\Colegio.Datos\obj\Debug\netcoreapp3.1\Colegio.Datos.csprojAssemblyReference.cache

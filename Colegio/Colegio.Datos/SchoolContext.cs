@@ -19,14 +19,20 @@ namespace Colegio.Datos
         public virtual DbSet<Classrooms> Classrooms { get; set; }
         public virtual DbSet<DocumentType> DocumentType { get; set; }
         public virtual DbSet<Grade> Grade { get; set; }
+        public virtual DbSet<Role> Role { get; set; }
         public virtual DbSet<Section> Section { get; set; }
         public virtual DbSet<StudentState> StudentState { get; set; }
         public virtual DbSet<Students> Students { get; set; }
-        public virtual DbSet<UserType> UserType { get; set; }
+        public virtual DbSet<UserState> UserState { get; set; }
         public virtual DbSet<Users> Users { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            if (!optionsBuilder.IsConfigured)
+            {
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
+                optionsBuilder.UseSqlServer("Server=.\\SQLExpress;Database=SchoolDB;Trusted_Connection=True;");
+            }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -62,9 +68,9 @@ namespace Colegio.Datos
 
                 entity.Property(e => e.Id).HasColumnName("id");
 
-                entity.Property(e => e.DocumentType1)
+                entity.Property(e => e.Name)
                     .IsRequired()
-                    .HasColumnName("document_type")
+                    .HasColumnName("name")
                     .HasMaxLength(30)
                     .IsUnicode(false);
             });
@@ -79,6 +85,23 @@ namespace Colegio.Datos
                     .IsRequired()
                     .HasColumnName("grade")
                     .HasMaxLength(10)
+                    .IsUnicode(false);
+            });
+
+            modelBuilder.Entity<Role>(entity =>
+            {
+                entity.ToTable("ROLE");
+
+                entity.Property(e => e.Id).HasColumnName("id");
+
+                entity.Property(e => e.Description)
+                    .HasColumnName("description")
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Name)
+                    .IsRequired()
+                    .HasColumnName("name")
+                    .HasMaxLength(30)
                     .IsUnicode(false);
             });
 
@@ -143,16 +166,20 @@ namespace Colegio.Datos
                     .HasConstraintName("FK_Student_State");
             });
 
-            modelBuilder.Entity<UserType>(entity =>
+            modelBuilder.Entity<UserState>(entity =>
             {
-                entity.ToTable("USER_TYPE");
+                entity.ToTable("USER_STATE");
 
                 entity.Property(e => e.Id).HasColumnName("id");
 
-                entity.Property(e => e.UserType1)
+                entity.Property(e => e.Description)
+                    .HasColumnName("description")
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Name)
                     .IsRequired()
-                    .HasColumnName("user_type")
-                    .HasMaxLength(30)
+                    .HasColumnName("name")
+                    .HasMaxLength(50)
                     .IsUnicode(false);
             });
 
@@ -188,13 +215,17 @@ namespace Colegio.Datos
                     .HasMaxLength(50)
                     .IsUnicode(false);
 
-                entity.Property(e => e.Password)
+                entity.Property(e => e.PasswordHash)
                     .IsRequired()
-                    .HasColumnName("password")
-                    .HasMaxLength(100)
-                    .IsUnicode(false);
+                    .HasColumnName("password_hash");
 
-                entity.Property(e => e.UserType).HasColumnName("user_type");
+                entity.Property(e => e.PasswordSalt)
+                    .IsRequired()
+                    .HasColumnName("password_salt");
+
+                entity.Property(e => e.RoleId).HasColumnName("role_id");
+
+                entity.Property(e => e.UserStateId).HasColumnName("user_state_id");
 
                 entity.HasOne(d => d.DocumentType)
                     .WithMany(p => p.Users)
@@ -202,11 +233,17 @@ namespace Colegio.Datos
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Users_DocumentType");
 
-                entity.HasOne(d => d.UserTypeNavigation)
+                entity.HasOne(d => d.Role)
                     .WithMany(p => p.Users)
-                    .HasForeignKey(d => d.UserType)
+                    .HasForeignKey(d => d.RoleId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_User_Type");
+                    .HasConstraintName("FK_Users_Role");
+
+                entity.HasOne(d => d.UserState)
+                    .WithMany(p => p.Users)
+                    .HasForeignKey(d => d.UserStateId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Users_State");
             });
 
             OnModelCreatingPartial(modelBuilder);
